@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Usman Abro - Professional Portfolio</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f4f7f6; 
+        }
+        header { 
+            background: #2c3e50; 
+            color: #fff; 
+            padding: 40px 20px; 
+            text-align: center; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+        }
+        header h1 { margin: 0; font-size: 2.8em; letter-spacing: 1px; }
+        header p { margin: 10px 0 0; font-size: 1.2em; color: #1abc9c; }
+        .contact-info { margin-top: 15px; font-size: 0.9em; }
+        .contact-info a { color: #ecf0f1; text-decoration: none; margin: 0 10px; border-bottom: 1px dotted #ecf0f1;}
+        .contact-info a:hover { color: #1abc9c; border-bottom: 1px solid #1abc9c;}
+        section { 
+            background: #fff; 
+            padding: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+        }
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #1abc9c; 
+            padding-bottom: 10px; 
+            margin-top: 0;
+        }
+        .project { margin-bottom: 30px; }
+        .project:last-child { margin-bottom: 0; }
+        .project h3 { color: #34495e; margin-bottom: 5px; font-size: 1.4em; }
+        .project-meta { font-size: 0.9em; color: #7f8c8d; font-style: italic; margin-bottom: 15px; }
+        .tag-container { margin: 15px 0; }
+        .tag { 
+            display: inline-block; 
+            background: #e8f4f8; 
+            color: #2980b9;
+            padding: 5px 12px; 
+            border-radius: 15px; 
+            font-size: 0.85em; 
+            margin-right: 8px; 
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        ul { padding-left: 20px; color: #555; }
+        li { margin-bottom: 8px; }
+        a.button { 
+            display: inline-block; 
+            background: #1abc9c; 
+            color: #fff; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin-top: 10px; 
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        a.button:hover { background: #16a085; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Muhammad Usman Abro</h1>
+    <p>Data Analyst | Data Engineer | AI Engineer | ML Engineer</p>
+    <div class="contact-info">
+        <a href="mailto:Usmanabro@icloud.com">Usmanabro@icloud.com</a> | 
+        <span>224-844-3934</span>
+    </div>
+</header>
+
+<section id="about">
+    <h2>Profile</h2>
+    <p>Graduate student pursuing an M.S. in Data Analytics and Artificial Intelligence at Indiana Wesleyan University, with undergraduate training in neuroscience and clinical laboratory experience. Cross-disciplinary interests include AI/ML systems, healthcare data, neurodegenerative disease research, and data-driven automation.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio Artifacts</h2>
+    
+    <div class="project">
+        <h3>Architecture & Specification for Clinical RAG Chatbot</h3>
+        <div class="project-meta">Academic AI Lab Project | Patient Education Bot</div>
+        <p><strong>The Challenge:</strong> Patients researching plastic surgery often encounter dense medical terminology or unreliable information online.</p>
+        <p><strong>The Solution:</strong> Designed a comprehensive specification for an educational chatbot that translates current journal literature and clinical guidelines into accessible language. The architecture utilizes a constrained LLM environment guided by an <code>agent.md</code> file to enforce strict safety behaviors and source restrictions.</p>
+        <ul>
+            <li><strong>Evidence-Based Grounding:</strong> Restricted knowledge retrieval strictly to major peer-reviewed journals and clinical guidelines, explicitly excluding unverified platforms like social media.</li>
+            <li><strong>Clinical Guardrails:</strong> Programmed safety behavior to include medical disclaimers, refuse off-topic diagnostic queries, and suggest non-surgical alternatives to prevent bias.</li>
+            <li><strong>Financial Transparency:</strong> Integrated specific logic rules for cost information, leveraging sources like the CMS Medicare Physician Fee Schedule while segregating financial data from clinical claims.</li>
+        </ul>
+        <div class="tag-container">
+            <span class="tag">AI Workflow Integration</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Clinical Data Governance</span>
+            <span class="tag">Python</span>
+        </div>
+        <a href="ai_bot_-_Google_Docs.pdf" class="button">View Specification Document</a>
+    </div>
+
+    <div class="project">
+        <h3>AI Outreach & Marketing Interface</h3>
+        <div class="project-meta">Independent Project | In Progress</div>
+        <p>Developing an AI-enabled outreach and marketing interface intended to coordinate campaign workflows, prospect analysis, and performance monitoring.</p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience & Education</h2>
+    
+    <div class="project">
+        <h3>Medical Laboratory Technologist I</h3>
+        <div class="project-meta">UI Health | Oct 2023 – Jul 2026</div>
+        <ul>
+            <li>Supported clinical laboratory operations, specimen-processing workflows, accuracy checks, and issue resolution in a regulated healthcare environment.</li>
+        </ul>
+    </div>
+    
+    <div class="project">
+        <h3>Pathology Lab Assistant</h3>
+        <div class="project-meta">UI Health | Jun 2022 – Aug 2023</div>
+        <ul>
+            <li>Processed and tracked specimens, resolved order and labeling discrepancies, and used Epic to coordinate laboratory information with hospital staff.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3>M.S. in Data Analytics and Artificial Intelligence</h3>
+        <div class="project-meta">Indiana Wesleyan University (IWU) | In Progress</div>
+    </div>
+    
+    <div class="project">
+        <h3>B.S. in Neuroscience</h3>
+        <div class="project-meta">University of Illinois Chicago (UIC) | Aug 2023</div>
+    </div>
+</section>
+
+</body>
+</html>
